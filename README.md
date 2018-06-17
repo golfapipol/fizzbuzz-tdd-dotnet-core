@@ -13,6 +13,9 @@ dotnet new xunit -n api.Unittest -o test/api.Unittest
 ```
 แล้วใช้ solution เป็นตัวเชื่อม
 ```
+// เชื่อม project เข้ากับ solution
 dotnet sln add src/api/api.csproj
 dotnet sln add test/api.Unittest/api.Unittest.csproj
+// ลอง list ดูว่ามี project อะไรอยู่ใน solution บ้าง
+dotnet list 
 ```
