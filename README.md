@@ -19,3 +19,13 @@ dotnet sln add test/api.Unittest/api.Unittest.csproj
 // ลอง list ดูว่ามี project อะไรอยู่ใน solution บ้าง
 dotnet list 
 ```
+
+เริ่มเขียน unittest แต่ต้องเชื่อม reference กับ source code 
+```
+cd test/api.Unittest
+dotnet add reference ../../src/api/api.csproj
+```
+รัน test
+```
+dotnet test
+```
